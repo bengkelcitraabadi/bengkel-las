@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #2B2E4A;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.438);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+
+/*perbatesan isi dan jasa*/
+
+.pemesanan{
+    transform: translateY(20px);
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    background-color:#ffffff;
+}
+.pemesanan h1{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.tatacara-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.tatacara-content{
+    background-color: #2B2E4A;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 300px;
+    text-align: left;
+    transition: 0.6s;
+    cursor: default;
+}
+
+.tatacara-content h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tatacara-content img{
+    width: auto;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.tatacara-content p{
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tatacara-content:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*pembates tatacara dan kontak*/
+
+.kontak{
+    background-color: white;
+    width: 100%;
+    height: 50vh;
+}
+
+.kontak p{
+    text-align: center;
+    font-size: 12px;
+}
+
+.kontak-container{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 25px;
+    font-size: 24px;
+}
+
+.kontak-content{
+    background-color: #E94345;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    transition: 0.6s;
+    cursor: default;
+}
+
+.kontak-content a{
+    height: 100%;
+    text-decoration: none;
+    align-items: center;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.kontak-content:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*pembates*/
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .pemesanan h1{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+    .tatacara-container{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        color: white;
+    }
+
+    .tatacara-content{
+        background-color: #2B2E4A;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        height: 220px;
+        text-align: left;
+        transition: 0.6s;
+        cursor: default;
+    }
+
+    .tatacara-content h2{
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .tatacara-content img{
+        width: auto;
+        height: 100px;
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+
+    .tatacara-content p{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel Las Citra Abadi</title>
+    <link rel="stylesheet" href="pemesananstyle.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2B2E4A"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="hasil.html">Produk Kami</a></li>
+            <li><a href="pemesanan.html">Pemesanan</a></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Bengkel Las Citra Abadi</a></li>
+            <li class="hideOnMobile"><a href="hasil.html">Produk Kami</a></li>
+            <li class="hideOnMobile"><a href="pemesanan.html">Pemesanan</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2B2E4A"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <section class="pemesanan">
+        <h1>TATA CARA PEMESANAN</h1>
+        <div class="tatacara-container">
+            <div class="tatacara-content">
+                <h2>PEMESANAN</h2>
+                <img src="pesan.png">
+                <p>pemesanan dapat dilakukan dengan melalui whatsapp/secara langsung, pemesanan berupa apa yang ingin dibuat dan lokasi yang ingin dibuatkan.</p>
+            </div>
+            <div class="tatacara-content">
+                <h2>SURVEI</h2>
+                <img src="survei.png">
+                <p>kami akan menuju lokasi untuk melihat kondisi tempat dan melakukan pengukuran.</p>
+            </div>
+            <div class="tatacara-content">
+                <h2>DEAL</h2>
+                <img src="deal.png">
+                <p>kesepakatan dengan costumer tentang bahan yang akan digunakan, biaya, dan menentukan waktu lama pengerjaan.</p>
+            </div>
+            <div class="tatacara-content">
+                <h2>PENGERJAAN</h2>
+                <img src="kerja.png">
+                <p>pengerjaaan akan dimulai setelah kesepakatan oleh costumer, dan akan selesai sesuai waktu yang ditentukan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="kontak">
+        <p>Klik Tombol Dibawah Untuk Melakukan Pemesanan,</p>
+        <p>Anda Akan Diarahkan Ke Whatsapp Untuk Memesan</p>
+        <div class="kontak-container">
+            <div class="kontak-content">
+                <a href="https://wa.me/628128176125">KLIK DISINI</a>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
