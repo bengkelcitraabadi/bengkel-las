@@ -1,0 +1,19 @@
+.filters{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:32px}
+.chip{padding:9px 22px;border:2px solid var(--navy);border-radius:30px;background:none;color:var(--navy);font:700 15px 'Barlow';cursor:pointer;transition:.25s}
+.chip:hover{transform:translateY(-2px)}
+.chip.on{background:var(--navy);color:#fff}
+.gal{columns:4 230px;column-gap:14px}
+.gal figure{break-inside:avoid;margin-bottom:14px;position:relative;overflow:hidden;border-radius:10px;cursor:zoom-in;background:#dfe1ea;min-height:120px;transition:opacity .3s,transform .3s}
+.gal figure.off{opacity:0;transform:scale(.9)}
+.gal img{display:block;width:100%;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.08)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;color:#fff;font-weight:700;background:linear-gradient(transparent,rgba(26,28,48,.85));transform:translateY(100%);transition:transform .35s}
+.gal figure:hover figcaption{transform:none}
+#lb{position:fixed;inset:0;z-index:100;background:rgba(15,16,28,.92);display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .3s}
+#lb.on{opacity:1;pointer-events:auto}
+#lb img{max-width:88vw;max-height:78vh;border-radius:8px;transform:scale(.94);transition:transform .35s}
+#lb.on img{transform:none}
+#cap{color:#fff;text-align:center;margin-top:12px}
+#lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:48px;height:48px;border-radius:50%;font-size:24px;cursor:pointer;transition:.2s}
+#lb button:hover{background:var(--red)}
+#x{top:20px;right:20px}#pv{left:16px;top:50%}#nx{right:16px;top:50%}

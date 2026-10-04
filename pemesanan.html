@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pemesanan - Bengkel Las Citra Abadi</title>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="pemesananstyle.css">
+</head>
+<body>
+<nav class="nav" id="nav">
+  <a class="brand" href="index.html">Citra <b>Abadi</b></a>
+  <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <ul class="links">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="hasil.html">Produk Kami</a></li>
+    <li><a href="pemesanan.html">Pemesanan</a></li>
+  </ul>
+  <i class="bar"></i>
+</nav>
+
+<header class="pagehead">
+  <h1>Tata cara pemesanan</h1>
+  <p>Empat langkah dari pesan sampai pekerjaan selesai.</p>
+</header>
+
+<section class="wrap">
+  <div class="steps">
+    <div class="step tilt rv"><img src="pesan.png" alt=""><h3>Pemesanan</h3><p>Pesan lewat WhatsApp atau datang langsung. Sebutkan apa yang ingin dibuat dan lokasinya.</p></div>
+    <div class="step tilt rv" style="--i:1"><img src="survei.png" alt=""><h3>Survei</h3><p>Kami datang ke lokasi untuk melihat kondisi tempat dan melakukan pengukuran.</p></div>
+    <div class="step tilt rv" style="--i:2"><img src="deal.png" alt=""><h3>Deal</h3><p>Kita sepakati bahan yang dipakai, biaya, dan lama pengerjaan.</p></div>
+    <div class="step tilt rv" style="--i:3"><img src="kerja.png" alt=""><h3>Pengerjaan</h3><p>Pengerjaan dimulai setelah ada kesepakatan dan selesai sesuai waktu yang ditentukan.</p></div>
+  </div>
+</section>
+
+<section class="formwrap">
+  <div class="wrap rv">
+    <h2>Pesan lewat WhatsApp</h2>
+    <p style="margin-bottom:24px">Isi data singkat di bawah. Pesan akan terisi otomatis di WhatsApp.</p>
+    <form id="pesan" novalidate>
+      <label>Nama <input name="nama" autocomplete="name"></label>
+      <label>Jenis pekerjaan
+        <select name="jenis">
+          <option value="">Pilih jenis pekerjaan</option>
+          <option>Pagar</option><option>Pintu</option><option>Teralis jendela</option>
+          <option>Railing tangga</option><option>Railing balkon</option><option>Kanopi</option>
+          <option>Tangga putar</option><option>Lainnya</option>
+        </select>
+      </label>
+      <label>Lokasi pemasangan <input name="lokasi" placeholder="Contoh: Sunter, Jakarta Utara"></label>
+      <label>Detail tambahan <textarea name="detail" rows="3" placeholder="Ukuran, bahan, atau model yang diinginkan"></textarea></label>
+      <p id="err" role="alert"></p>
+      <button class="btn" type="submit">Kirim lewat WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><h3>Bengkel Las Citra Abadi</h3><p>Jasa pengelasan dan konstruksi logam sejak 2000.</p></div>
+    <div><h3>Hubungi kami</h3>
+      <p>📍 Jl. Sunter Pulo Kecil No.9, Sunter Jaya, Kec. Tj. Priok, Jakarta Utara</p>
+      <p>📞 <a href="https://wa.me/628128176125">0812-8176-125</a> / <a href="https://wa.me/628128974765">0812-8897-4765</a></p>
+      <p>✉️ <a href="mailto:bengkellascitraabadi@gmail.com">bengkellascitraabadi@gmail.com</a></p>
+    </div>
+  </div>
+</footer>
+<a class="wa" href="https://wa.me/628128176125" aria-label="Chat WhatsApp">WA</a>
+<script src="app.js"></script>
+</body>
+</html>
